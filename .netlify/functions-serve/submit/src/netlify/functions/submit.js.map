@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/joelrubin/Desktop/dev/serverless-typescript/netlify/functions/submit.ts"],
+  "sourceRoot": "/var/folders/dg/_2pwvz4549b80by7st0t30b80000gn/T/tmp-3815-jAjJFi7PD6HD",
+  "sourcesContent": ["import { Handler } from '@netlify/functions';\n\nexport const handler: Handler = (event) => {\n  const { name, favoriteColor } = JSON.parse(event.body);\n\n  console.log({ name, favoriteColor });\n\n  return {\n    statusCode: 200,\n    body: JSON.stringify({\n      name,\n      favoriteColor,\n      message: `My name is ${name} and my favorite color is ${favoriteColor}`,\n    }),\n  };\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEO,IAAM,UAAmB,CAAC,UAAU;AACzC,QAAM,EAAE,MAAM,kBAAkB,KAAK,MAAM,MAAM;AAEjD,UAAQ,IAAI,EAAE,MAAM;AAEpB,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACnB;AAAA,MACA;AAAA,MACA,SAAS,cAAc,iCAAiC;AAAA;AAAA;AAAA;",
+  "names": []
+}
